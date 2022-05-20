@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Prueba Front End
+        </title>
+         <link rel="stylesheet" href="../css/style.css"> 
+         <link rel="stylesheet" href="../css/style_modal.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav id="nav" class="nav" >
+                <ul class="nav-menu" >
+
+                    <li>
+                        <a class="item-menu" href="#" >Inicio</a>
+                    </li>
+
+                    <li>
+                        <a class="item-menu" href="#" >Tipo pokemones</a>
+                    </li>
+
+                    <li>
+                        <a class="item-menu" href="#" >Información Pokemones</a>
+                    </li>
+                    
+                </ul>
+            </nav>
+            <button id="button" class="button" >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </header>
+
+
+        <div class="txtpok">
+                <h1 class="txttitle">Lista de pokemon</h1>
+                    <input type="text" id="mysearch"  placeholder="Buscar..." ></input>
+                    <input type="submit" value="Buscar" id="btnbuscar" onclick="search()">
+                    <input type="button" value="Limpiar" id="btnlimpiar" onclick="limpiarbuscador()">
+                <hr>
+            <div id="contenedor">
+              <!-- Lista de nombres pokemon más url -->
+            </div>
+        </div>
+
+           <!-- ventana modal  -->
+
+        <div class="page">
+            <a href="#" class="boton" id="btnabrir" style="opacity: 0;"></a>
+        </div>
+            <div  class="transparent">
+                <div class="modal">
+                    <div class="closemodal">
+                        <span></span>
+                    </div>
+                    <div class="titlemodal"><p id="tnamepoke">Bulbasaur</p></div>
+                    <div class="infomodal">
+                        <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png" id="imgpokemon" alt="">
+                        <p>
+                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        
+        <script src="../js/menuh.js"></script>
+        <script src="../js/conexionapi.js"></script> 
+        <script src="../js/search.js"></script>
+        <script src="../js/infopokemon.js"></script>
+        
+    </body>
+</html>
